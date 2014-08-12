@@ -1,0 +1,27 @@
+<h1>Listing posts</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Photo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @posts.each do |post| %>
+  <tr>
+  <%= post.photo_file_name %>
+   <img src="https://googledrive.com/host/0B1nfdjDJc2dnQUp0UllwMzM5aVE/<%=post.photo_file_name%>">
+     <td><%= post.name %></td>
+    <td><%= image_tag post.photo.url(:original ) %></td>
+    <td><%= link_to 'Show', post %></td>
+    <td><%= link_to 'Edit', edit_post_path(post) %></td>
+    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New post', new_post_path %>
