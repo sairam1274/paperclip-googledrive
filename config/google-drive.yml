@@ -6,3 +6,9 @@ client_secret:
 access_token:  
 refresh_token:  
 
+
+# client = Google::APIClient.new
+# client.authorization.client_id = '637999945856-oui0uvn41q21uh220iq0i9a0el6rbafp.apps.googleusercontent.com'
+# client.authorization.client_secret = 'at5Mr1_x7fv3n1zueK_BGgGI'
+# client.authorization.access_token = 'ya29.GltEBELlobG0t012kMSHi-_wElj-LocXZ4DJODyDrxFjCyLKieySFJXCiswiypZnxc6rwgBYVTiTsiMONFE8JgKCoFilU2Xzey_2MWSxNIyW7LFw5hw1aie2ALbf'
+# client.authorization.refresh_token = '1/roD99PElc5yOxEw86m_LrezP17srwiD5xOVR-TyKOdE'
